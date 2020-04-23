@@ -10,21 +10,41 @@
 </head>
 <body>
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" onsubmit = "onSubmit()">
+
     <fieldset name="personal-info">
       <legend>Personal information</legend>
       <div class="container">
         <label for="sname">Surname:</label>
-        <input type="text" id="sname" name="sname" autocomplete="off" required>
+        <input
+          type="text"
+          id="sname"
+          name="sname"
+          autocomplete="off"
+          required
+        >
       </div>
 
       <div class="container">
         <label for="fname">Name:</label>
-        <input type="text" id="fname" name="fname" autocomplete="off" required>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          autocomplete="off"
+          required
+        >
       </div>
 
       <div class="container">
         <label for="age">How old are You?</label>
-        <input type="number" id="age" name="age" min="1" max="120" value="12">
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="1"
+          max="120"
+          value="12"
+        >
       </div>
 
       <div class="container">
@@ -42,12 +62,22 @@
       <legend>Registration</legend>
       <div class="container">
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="email@example.com">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@example.com"
+        >
       </div>
 
       <div class="container">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="8">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+        >
       </div>
     </fieldset>
 
@@ -55,9 +85,19 @@
       <legend>An interesting fact about you!</legend>
       <div class="container">
         Do you love cats?
-        <input type="radio" id="cats-yes" name="loves-cats" value="Yes">
+        <input
+          type="radio"
+          id="cats-yes"
+          name="loves-cats"
+          value="Yes"
+        >
         <label for="cats-yes">Yes</label>
-        <input type="radio" id="cats-no" name="loves-cats" value="No">
+        <input
+          type="radio"
+          id="cats-no"
+          name="loves-cats"
+          value="No"
+        >
         <label for="cats-no">No</label>
       </div>
 
@@ -90,7 +130,14 @@
       <legend>Additional info</legend>
       <div class="container">
         <label for="comments">Comments:</label>
-        <textarea name="comments" id="comments" cols="20" rows="2" maxlength="300" autocomplete="off"></textarea>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="20"
+          rows="2"
+          maxlength="300"
+          autocomplete="off">
+        </textarea>
       </div>
 
       <div class="container">
@@ -100,9 +147,13 @@
           <option id="recommend-no" value="no">no</option>
         </select>
       </div>
+
     </fieldset>
-    <button type="button" onsubmit="onSubmit()">Submit</button>
+
+    <button type="submit" onsubmit="onSubmit()">Submit</button>
+
   </form>
   <script type="text/javascript" src="./main.js"></script>
+
 </body>
 </html>
